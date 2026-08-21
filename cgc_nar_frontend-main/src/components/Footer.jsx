@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 // Import icons for social media links
 import { Linkedin, Instagram, Twitter, Globe } from "lucide-react";
-import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
@@ -13,7 +12,7 @@ const Footer = () => {
         <div className="lg:col-span-1">
           <h2 className="text-xl font-bold mb-3 text-yellow-300">Career & Guidance Club</h2>
           <p className="text-gray-300 text-sm">
-            Empowering students of NIT Andhra Pradesh with guidance, mentorship,
+            Empowering the students of NIT Andhra Pradesh with guidance, mentorship,
             and opportunities to achieve career success and holistic growth.
           </p>
         </div>
@@ -42,18 +41,18 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Follow Us</h3>
           <div className="flex space-x-4 text-gray-300">
-            <motion.a href="#" whileHover={{ scale: 1.2, y: -2 }} className="hover:text-yellow-400 transition-colors">
+            <a href="#" className="hover:text-yellow-400 transition-colors" aria-label="LinkedIn">
               <Linkedin size={22} />
-            </motion.a>
-            <motion.a href="https://www.instagram.com/careerguidance_nitandhra/?igsh=ZnJhYzVhenMyajVh#" whileHover={{ scale: 1.2, y: -2 }} className="hover:text-yellow-400 transition-colors">
+            </a>
+            <a href="https://www.instagram.com/careerguidance_nitandhra/?igsh=ZnJhYzVhenMyajVh#" target="_blank" rel="noreferrer" className="hover:text-yellow-400 transition-colors" aria-label="Instagram">
               <Instagram size={22} />
-            </motion.a>
-            <motion.a href="#" whileHover={{ scale: 1.2, y: -2 }} className="hover:text-yellow-400 transition-colors">
+            </a>
+            <a href="#" className="hover:text-yellow-400 transition-colors" aria-label="Twitter">
               <Twitter size={22} />
-            </motion.a>
-            <motion.a href="#" whileHover={{ scale: 1.2, y: -2 }} className="hover:text-yellow-400 transition-colors">
+            </a>
+            <a href="#" className="hover:text-yellow-400 transition-colors" aria-label="Website">
               <Globe size={22} />
-            </motion.a>
+            </a>
           </div>
         </div>
       </div>
